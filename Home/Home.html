@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a href="image"><img src="/Images/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <div class="input-group mx-3">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" placeholder="search" class="form-control -3"
+                aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text"><i class="bi bi-filter"></i></span>
+            </div></button>
+          </form>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-end mb-2 mb-lg-sm-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">
+                <i class="bi bi-heart-fill"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-gear-fill"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar End -->
+
+  <!--containerstart-->
+  <div class="ads container mt-4">
+    
+    <div class="row" id="Hero">
+      <div class="col-md-6">
+        <div class="card h-100" id="card-left">
+          <img src="/Images/BG (1).png" class="card-img-top" alt="Image">
+          <div class="card-body text-white" id="card-body">
+            <h5 class="card-title">The Best Platform <br>for Car Rental</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary" id="card-right">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100" id="card-right">
+          <img src="/Images/BG2.png" class="card-img-top" alt="Image">
+          <div class="card-body text-white" id="card-body">
+            <h5 class="card-title">Easy way to rent a car at a <br>low price</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary" id="card-left">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Pickup drop-->
+    <div class="search-section">
+      <div class="dropdown form-floating">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Location
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="input-group">
+        <div class="form-floating">
+          <input type="date" class="form-control" id="pickUpDate">
+          <label for="pickUpDate">Date</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="form-floating">
+          <input type="time" class="form-control" id="pickUpTime">
+          <label for="pickUpTime">Time</label>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-primary exchange-icon"><i class="bi bi-arrow-down-up"></i></button>
+      </div>
+      <div class="dropdown form-floating">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Location
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="input-group">
+        <div class="form-floating">
+          <input type="date" class="form-control" id="dropOffDate">
+          <label for="dropOffDate">Date</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="form-floating">
+          <input type="time" class="form-control" id="dropOffTime">
+          <label for="dropOffTime">Time</label>
+        </div>
+      </div>
+    </div>
+
+    <!--popular car cards-->
+    <section class="popularcars mt-4">
+      <div class="heading1 d-flex justify-content-between">
+        <h5 class="text-secondary mb-3">Popular Car</h5>
+        <a href="#" class="text-decoration-none"><p class="text-primary mb-3">View More</p></a>
+      </div>
+
+      <div class="row">
+        <!--cards-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">Koenigsegg</h5>
+                  <p class="card-subtitle text-muted">Sport</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/koenigsegg.png" alt="Koenigsegg" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 90L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 2 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$99.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--2-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">NissanGT-R</h5>
+                  <p class="card-subtitle text-muted">Sport</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/NissanGT-R.png" alt="NissanGT-R" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 80L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 2 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$80.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--3-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">Rolls-Royce</h5>
+                  <p class="card-subtitle text-muted">Seaden</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/Rollsroyce.png" alt="Rolls-Royce" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 70L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 4 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$96.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">NissanGT-R</h5>
+                  <p class="card-subtitle text-muted">Sport</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/NissanGT-R.png" alt="NissanGT-R" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 80L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 2 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$80.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      
+      </div>
+    </section>
+
+      <!--recomendation cars-->
+    <section class="recomendation mt-4">
+      <div class="heading1 d-flex justify-content-between">
+        <h5 class="text-secondary mb-3">Popular Car</h5>
+        <a href="#" class="text-decoration-none"><p class="text-primary mb-3">View More</p></a>
+      </div>
+
+      <div class="row">
+        <!--cards-->
+        <!--card-start-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">AllNewRush</h5>
+                  <p class="card-subtitle text-muted">SUV</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/AllNewRush.png" alt="AllNewRush" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 70L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 6 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$72.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$80.00</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start2-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">CR-V</h5>
+                  <p class="card-subtitle text-muted">SUV</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/CR-V.png" alt="CR-V" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 80L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 6 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$80.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start3-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">AllNewTerios</h5>
+                  <p class="card-subtitle text-muted">SUV</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/AllNewTerios.png" alt="AllNewTerios" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 90L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 6 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$74.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start4-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">CR-V</h5>
+                  <p class="card-subtitle text-muted">SUV</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/CR-V2.png" alt="Koenigsegg" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 80L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 6 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$99.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start5-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">MGZXExclusice</h5>
+                  <p class="card-subtitle text-muted">Hatchback</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/MGZX Exclusive.png" alt="MGZXExclusice" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 70L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 4 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$76.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$80</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start6-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">NewMGZS</h5>
+                  <p class="card-subtitle text-muted">SUV</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/New MG ZS.png" alt="NewMGZS" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 80L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 6 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$80.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start7-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">MGZXExcite</h5>
+                  <p class="card-subtitle text-muted">Hatchback</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/MGZXExcite.png" alt="MGZXExcite" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 90L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 4 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$74.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+        <!--card-start8-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card p-3 mt-3">
+            <div class="card-body text-left">
+              <div class="tile d-flex justify-content-between">
+                <div class="heartadtile">
+                  <h5 class="card-title">NewMGZS</h5>
+                  <p class="card-subtitle text-muted">SUV</p>
+                </div>
+                <div class="rightbtm">
+                  <span><i class="bi bi-heart-fill" id="heart"></i></span>
+                </div>
+              </div>
+              <img src="/Images/NewMGZS.png" alt="NewMGZS" class="img-fluid my-4">
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="bi bi-fuel-pump"></i> 80L</span>
+                <span><i class="bi bi-gear"></i> Manual</span>
+                <span><i class="bi bi-people"></i> 6 People</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="price ">
+                  <span class="text-dark fs-5">$80.00</span><small class="text-muted"> / day</small>
+                  <p class="text-muted">$100</p>
+                </div>
+                <div class="btn">
+                <button class="btn btn-primary mt-2">Rent Now</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cardend-->
+
+
+      
+      </div>
+    </section>
+
+    <!--showmorebtn-->
+    <div class="showmore">
+        <a href="#" class="btn btn-primary" id="card-left">Go somewhere</a>
+    </div>
+    <!--btnshow-->
+  </div>
+  <!--containerend-->
+  <!--footersection-->
+  <div class="footer">
+  <div class="footer-container">
+    <div class="fttile">
+      <img src="//Images/Logo.png" alt="morent">
+      <p>Our vision is to provide convenience and help increase your sales business.</p>
+    </div>
+    <div class="qlinks">
+      <div class="qcontent"> 
+        <ul>
+          <h3>About</h3>
+          <li class="link"><a href="#">How it works</a></li>
+          <li class="link"><a href="#">Featured</a></li>
+          <li class="link"><a href="#">Partnership</a></li>
+          <li class="link"><a href="#">BussinessRelation</a></li>
+        </ul>
+      </div>
+      <div class="qcontent">
+        <ul>
+          <h3>Community</h3>
+          <li class="link"><a href="#">Events</a></li>
+          <li class="link"><a href="#">Blog</a></li>
+          <li class="link"><a href="#">Podcast</a></li>
+          <li class="link"><a href="#">Invite a Friend</a></li>
+        </ul>
+      </div>
+      <div class="qcontent">
+        <ul>
+          <h3>socials</h3>
+          <li class="link"><a href="#">Discord</a></li>
+          <li class="link"><a href="#">Instagram</a></li>
+          <li class="link"><a href="#">X(Twitter)</a></li>
+          <li class="link"><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  <hr>
+  <div class="footer-last">
+    <div class="right">
+        <div class="copyright">
+          <p>©2022Copyright, All rights reserved.</p>
+        </div>
+    </div>
+    <div class="left">
+        <div class="copyright">
+          <p>Privacy&Policy</p>
+        </div>
+        <div class="copyright">
+          <p>Terms&Condition.</p>
+        </div>
+    </div>
+  </div>
+  <!--footerend-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
