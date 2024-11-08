@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.images-1 img{
+    width: 50%;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.images-1{
+    
+}
+.images-2 img{
+    width: 25%;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+#row{
+    margin: 0;
+}
