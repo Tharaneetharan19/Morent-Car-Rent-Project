@@ -54,3 +54,22 @@
     right: 10px;
     gap: 10px;
   }
+  
+  @media (max-width: 768px) {
+    .footer-container{
+      flex-direction: column;
+    }
+    .fttile{
+      padding: 10px;
+    }
+    .left{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .qlinks{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

@@ -67,6 +67,12 @@ body {
   height: auto;
 }
 
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  transition: 0.3s;
+}
+
+
 #heart:hover{
   color: red;
 }
@@ -107,6 +113,7 @@ body {
 .link{
  list-style: none;
   display:block;
+  line-height: 2rem;
 }
 
 .link a{
